@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D48928A1FD5031D00C852AF /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4892891FD5031D00C852AF /* FoodTrackerTests.swift */; };
+		7D4892921FD503EC00C852AF /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D4892911FD503EC00C852AF /* readme.md */; };
 		7D5287711FD4D45D000181D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287701FD4D45D000181D9 /* AppDelegate.swift */; };
 		7D5287731FD4D45E000181D9 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287721FD4D45E000181D9 /* MealViewController.swift */; };
 		7D5287761FD4D45E000181D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5287741FD4D45E000181D9 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		7D4892871FD5031D00C852AF /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4892891FD5031D00C852AF /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		7D48928B1FD5031D00C852AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4892911FD503EC00C852AF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		7D52876D1FD4D45D000181D9 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5287701FD4D45D000181D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5287721FD4D45E000181D9 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		7D5287641FD4D45D000181D9 = {
 			isa = PBXGroup;
 			children = (
+				7D4892911FD503EC00C852AF /* readme.md */,
 				7D52876F1FD4D45D000181D9 /* FoodTracker */,
 				7D4892881FD5031D00C852AF /* FoodTrackerTests */,
 				7D52876E1FD4D45D000181D9 /* Products */,
@@ -200,6 +203,7 @@
 			files = (
 				7D52877B1FD4D45E000181D9 /* LaunchScreen.storyboard in Resources */,
 				7D5287781FD4D45E000181D9 /* Assets.xcassets in Resources */,
+				7D4892921FD503EC00C852AF /* readme.md in Resources */,
 				7D5287761FD4D45E000181D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

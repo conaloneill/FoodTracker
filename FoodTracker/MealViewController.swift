@@ -18,13 +18,13 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 	@IBOutlet weak var saveButton: UIBarButtonItem!
 	
 	/*
-		This value is either passed by 'MealTableViewController' in
-			'prepare(for: sender:)'
-		or constructed as part of adding a new meal.
+	This value is either passed by 'MealTableViewController' in
+	'prepare(for: sender:)'
+	or constructed as part of adding a new meal.
 	*/
 	var meal: Meal?
 	
-
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -43,7 +43,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 		updateSaveButtonState()
 	}
 	
-
+	
 	//MARK: UITextFieldDelegate
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		// Hide the keyboard.
@@ -117,7 +117,23 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 	
 	
 	//MARK: Actions
-	@IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+	@IBAction func selectPhotoFromUIAlertOption(_ sender: UITapGestureRecognizer) {
+		let actionVc  = UIAlertController(title: "Photo import",	message: "Choose from saved photos or take a photo", preferredStyle: .actionSheet)
+		actionVc.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: photoLibrary))
+		actionVc.addAction(UIAlertAction(title: "Camera", style: .default, handler: camera))
+		actionVc.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+		present(actionVc, animated: true, completion: nil)
+	}
+	
+	
+	//MARK: Private Methods
+	private func updateSaveButtonState() {
+		// Disable the Save button if the text field is empty.
+		let text = nameTextField.text ?? ""
+		saveButton.isEnabled = !text.isEmpty
+	}
+	
+	private func photoLibrary(action: UIAlertAction) {
 		// Hide the keyboard.
 		nameTextField.resignFirstResponder()
 		
@@ -132,12 +148,29 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 		present(imagePickerController, animated: true, completion: nil)
 	}
 	
+	private func camera(action: UIAlertAction) {
+		if UIImagePickerController.isSourceTypeAvailable(.camera) {
+			// Hide the keyboard.
+			nameTextField.resignFirstResponder()
+			
+			// UIImagePickerController is a view controller that lets a user pick media from their photo library
+			let imagePickerController = UIImagePickerController()
+			
+			// Only allow photos to be picked, not taken.
+			imagePickerController.sourceType = .camera
+			
+			// Make sure ViewController is notified when the user picks an image
+			imagePickerController.delegate = self
+			present(imagePickerController, animated: true, completion: nil)
+		} else {
+			noCamera()
+		}
+	}
 	
-	//MARK: Private Methods
-	private func updateSaveButtonState() {
-		// Disable the Save button if the text field is empty.
-		let text = nameTextField.text ?? ""
-		saveButton.isEnabled = !text.isEmpty
+	private func noCamera(){
+		let alertVC = UIAlertController(title: "No Camera",	message: "Sorry, this device has no camera", preferredStyle: .alert)
+		alertVC.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
+		present(alertVC, animated: true, completion: nil)
 	}
 	
 }

@@ -12,12 +12,12 @@
 		7D5287711FD4D45D000181D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287701FD4D45D000181D9 /* AppDelegate.swift */; };
 		7D5287731FD4D45E000181D9 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287721FD4D45E000181D9 /* MealViewController.swift */; };
 		7D5287761FD4D45E000181D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5287741FD4D45E000181D9 /* Main.storyboard */; };
-		7D5287781FD4D45E000181D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5287771FD4D45E000181D9 /* Assets.xcassets */; };
 		7D52877B1FD4D45E000181D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D5287791FD4D45E000181D9 /* LaunchScreen.storyboard */; };
 		7D5287911FD4DEB8000181D9 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287901FD4DEB8000181D9 /* RatingControl.swift */; };
 		7D5287931FD4E732000181D9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287921FD4E732000181D9 /* Meal.swift */; };
 		7D5287991FD4EC43000181D9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5287981FD4EC43000181D9 /* MealTableViewCell.swift */; };
 		7D52879B1FD4ED0A000181D9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D52879A1FD4ED0A000181D9 /* MealTableViewController.swift */; };
+		7DF735311FD79E5C002C3F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF735301FD79E5C002C3F87 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,13 @@
 		7D5287701FD4D45D000181D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5287721FD4D45E000181D9 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		7D5287751FD4D45E000181D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D5287771FD4D45E000181D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D52877A1FD4D45E000181D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D52877C1FD4D45E000181D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D5287901FD4DEB8000181D9 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		7D5287921FD4E732000181D9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7D5287981FD4EC43000181D9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		7D52879A1FD4ED0A000181D9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		7DF735301FD79E5C002C3F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				7D5287981FD4EC43000181D9 /* MealTableViewCell.swift */,
 				7D52879A1FD4ED0A000181D9 /* MealTableViewController.swift */,
 				7D5287741FD4D45E000181D9 /* Main.storyboard */,
-				7D5287771FD4D45E000181D9 /* Assets.xcassets */,
+				7DF735301FD79E5C002C3F87 /* Assets.xcassets */,
 				7D5287791FD4D45E000181D9 /* LaunchScreen.storyboard */,
 				7D52877C1FD4D45E000181D9 /* Info.plist */,
 			);
@@ -202,8 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D52877B1FD4D45E000181D9 /* LaunchScreen.storyboard in Resources */,
-				7D5287781FD4D45E000181D9 /* Assets.xcassets in Resources */,
 				7D4892921FD503EC00C852AF /* readme.md in Resources */,
+				7DF735311FD79E5C002C3F87 /* Assets.xcassets in Resources */,
 				7D5287761FD4D45E000181D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
